@@ -1,0 +1,5 @@
+// INSTRUCTIONS: Create a function that finds the maximum range of a triangle's third edge.
+
+function nextEdge(side1, side2) {
+	return (side1 + side2) - 1;
+}
