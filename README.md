@@ -1,0 +1,1 @@
+These are my solutions to the JavaScript coding challenges on edabit.com!
