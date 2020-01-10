@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Write a function to reverse an array.
+
+function reverse(arr) {
+	const newArr = [];
+  for (i=0; i<arr.length; i++) {
+    newArr.unshift(arr[i]);
+  }
+  return newArr;
+}

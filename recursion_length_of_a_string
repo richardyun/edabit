@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Write a function that returns the length of a string. Make your function recursive.
+
+function length(str) {
+	if (str !== "") {
+    return 1 + length(str.substring(1));
+  } else return 0;
+}
