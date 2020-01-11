@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Your job is to find out whether the lamp is on or off.
+
+// Check the tests tab to find out what you have to do to make this work.
+
+function lampStatus() {
+	return (lamp === "on" ? true : false);
+}
