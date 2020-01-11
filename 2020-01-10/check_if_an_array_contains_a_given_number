@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Write a function to check if an array contains a particular number.
+
+function check(arr, el) {
+	if (arr.indexOf(el) >= 0) {
+    return true;
+  } else return false;
+}
