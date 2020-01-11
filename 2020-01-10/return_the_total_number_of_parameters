@@ -1,0 +1,5 @@
+// INSTRUCTIONS: Create a function that returns the total number of parameters passed in.
+
+function numberArgs(/* fill-in */) {
+	return arguments.length;
+}
