@@ -1,0 +1,21 @@
+// INSTRUCTIONS: Create functions for the Calculator class that can do the following:
+
+// Add two numbers.
+// Subtract two numbers.
+// Multiply two numbers.
+// Divide two numbers.
+
+class Calculator {
+	add(num1, num2) {
+    return num1 + num2;
+  }
+  subtract(num1, num2) {
+    return num1 - num2;
+  }
+  multiply(num1, num2) {
+    return num1 * num2;
+  }
+  divide(num1, num2) {
+    return num1 / num2;
+  }
+}
