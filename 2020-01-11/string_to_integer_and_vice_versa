@@ -1,0 +1,12 @@
+// INSTRUCTIONS: Write two functions:
+
+// 1. toInt() : A function to convert a string to an integer.
+// 2. toStr() : A function to convert an integer to a string.
+
+function toInt(str) {
+	return parseInt(str, 10);
+}
+
+function toStr(int) {
+	return int.toString();
+}
