@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Given a string of letters, how many capital letters are there?
+
+function capitalLetters(txt) {
+	const regex = /[A-Z]/g;
+  capLetters = txt.match(regex);
+  if (capLetters === null) {
+    return 0;
+  } else return capLetters.length;
+}
