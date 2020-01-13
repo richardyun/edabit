@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Write a function that returns true if k^k == n for input (n, k).
+
+function kToK(n, k) {
+	if (Math.pow(k, k) === n) {
+    return true;
+  } else return false;
+}
