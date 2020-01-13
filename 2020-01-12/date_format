@@ -1,0 +1,5 @@
+// INSTRUCTIONS: Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
+
+function formatDate(date) {
+	return date.slice(-4) + date.slice(3, 5) + date.slice(0, 2);
+}
