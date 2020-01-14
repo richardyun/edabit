@@ -1,0 +1,5 @@
+// INSTRUCTIONS: Given an array of integers, return the difference between the largest and smallest integers in the array.
+
+function difference(nums) {
+	return Math.max(...nums) - Math.min(...nums);
+}
