@@ -1,0 +1,14 @@
+// INSTRUCTIONS: Create a function that takes two parameters (start, stop), and returns the sum of all even numbers in the range.
+
+function sumEvenNumsInRange(start, stop) {
+	const array = [];
+  for (i=start; i<=stop; i++) {
+    if (i % 2 === 0) {
+      array.push(i);
+    } else continue;
+  }
+  const sum = array.reduce(function(a, b) {
+    return a + b;
+  }, 0);
+  return sum;
+}

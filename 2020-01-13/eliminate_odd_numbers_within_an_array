@@ -1,0 +1,6 @@
+// INSTRUCTIONS: Create a function that takes an array of numbers and returns only the even values.
+
+function noOdds(arr) {
+	const evenArray = arr.filter(num => num % 2 === 0);
+  return evenArray;
+}
