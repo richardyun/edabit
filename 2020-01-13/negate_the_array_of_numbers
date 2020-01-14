@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Given an array of numbers, negate all elements contained within.
+
+// -Negating a positive value -+n will return -n, because all +'s are removed.
+// -Negating a negative value --n will return n, because the first - turns the second minus into a +.
+
+function negate(arr) {
+	const newArray = arr.map(el => el * -1);
+  return newArray;
+}
