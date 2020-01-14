@@ -1,0 +1,22 @@
+// INSTRUCTIONS: In semantic versioning a piece of software can be represented in a format like this example: 6.1.9.
+
+// 1. The first number is the major version.
+// 2. The second number is the minor version.
+// 3. The third number is the patch (bug fixes).
+
+// Write three separate functions, one to retrieve each element in the semantic versioning specification.
+
+function retrieveMajor(semver) {
+	const versionArr = semver.split(".");
+  return versionArr[0];
+}
+
+function retrieveMinor(semver) {
+	const versionArr = semver.split(".");
+  return versionArr[1];
+}
+
+function retrievePatch(semver) {
+	const versionArr = semver.split(".");
+  return versionArr[2];
+}
