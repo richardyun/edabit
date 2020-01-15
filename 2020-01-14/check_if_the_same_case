@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Create a function that returns true if an input string contains only uppercase or only lowercase letters.
+
+function sameCase(str) {
+	const upper = /[A-Z]/g;
+  const lower = /[a-z]/g;
+  if (upper.test(str) && lower.test(str)) {
+    return false;
+  } else return true;
+}
