@@ -1,0 +1,6 @@
+// INSTRUCTIONS: Create a function that returns the next element in an arithmetic sequence. In an arithmetic sequence, each element is formed by adding the same constant to the previous element.
+
+function nextElement(arr) {
+	const difference = arr[1] - arr[0];
+  return arr[arr.length - 1] + difference;
+}
