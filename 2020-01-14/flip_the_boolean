@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Create a function that reverses a boolean value and returns the string "boolean expected" if another variable type is given.
+
+function reverse(bool) {
+  if (typeof(bool) !== "boolean") {
+		return "boolean expected";
+	} else return !bool;
+}

@@ -1,0 +1,14 @@
+// INSTRUCTIONS: Write two functions:
+
+// 1. firstArg() should return the first parameter passed in.
+// 2. lastArg() should return the last parameter passed in.
+
+// Return undefined if the function takes no parameters.
+
+function firstArg() {
+	return arguments[0];
+}
+
+function lastArg() {
+	return arguments[arguments.length - 1];
+}

@@ -1,0 +1,6 @@
+// INSTRUCTIONS: Create a function to extract the name of the subreddit from its URL.
+
+function subReddit(link) {
+  const newArray = link.split("/");
+  return newArray[newArray.length - 2];
+}
