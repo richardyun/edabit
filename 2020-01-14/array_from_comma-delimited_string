@@ -1,0 +1,10 @@
+// INSTRUCTIONS: Write a function that turns a comma-delimited list into an array of strings.
+
+function toArray(str) {
+  if (str.length === 0) {
+    return [];
+  } else {
+    const newArray = str.split(", ");
+    return newArray;
+  }
+}
