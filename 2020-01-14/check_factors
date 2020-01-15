@@ -1,0 +1,11 @@
+// INSTRUCTIONS: Write a function that returns true if all integers in an array are factors of a number, and false otherwise.
+
+function checkFactors(factors, num) {
+  let status = true;
+	for (i=0; i<factors.length; i++) {
+    if (num % factors[i] === 0) {
+      continue;
+    } else status = false;
+  }
+  return status;
+}
