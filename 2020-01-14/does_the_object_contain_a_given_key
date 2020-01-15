@@ -1,0 +1,5 @@
+// INSTRUCTIONS: Write a function that returns true if a hash contains the specified key, and false otherwise.
+
+function hasKey(obj, key) {
+	return obj.hasOwnProperty(key);
+}
