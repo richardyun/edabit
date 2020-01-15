@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Create a function that removes the first and last characters from a string.
+
+function removeFirstLast(str) {
+	if (str.length < 3) {
+    return str;
+  } else return str.substring(1, str.length-1);
+}
