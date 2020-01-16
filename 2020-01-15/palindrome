@@ -1,0 +1,19 @@
+// INSTRUCTIONS: A palindrome is a word that is identical forward and backwards.
+
+// -mom
+// -racecar
+// -kayak
+
+// Given a word, create a function that checks whether it is a palindrome.
+
+function checkPalindrome(str) {
+	const array = str.split('');
+  const forward = str.split('');
+  const reversed = array.reverse();
+  for (i=0; i<array.length; i++) {
+    if (forward[i] !== reversed[i]) {
+      return false;
+    }
+    return true;
+  }
+}
