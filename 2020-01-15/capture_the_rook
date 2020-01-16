@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Write a function that returns true if two rooks can attack each other, and false otherwise.
+
+function canCapture([yourRook, opponentsRook]) {
+	if (yourRook[0] === opponentsRook[0] || yourRook[1] === opponentsRook[1]) {
+    return true;
+  } else return false;
+}
