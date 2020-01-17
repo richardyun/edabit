@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Sam and Frodo need to be close. If they are side by side in the array, your function should return true. If there is a name between them, return false.
+
+function middleEarth(arr) {
+	const samIndex = arr.indexOf("Sam");
+  if ((samIndex > 0 && arr[samIndex - 1] === "Frodo") || arr[samIndex + 1] === "Frodo") {
+    return true;
+  } else return false;
+}
