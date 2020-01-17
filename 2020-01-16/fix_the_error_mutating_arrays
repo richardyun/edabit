@@ -1,0 +1,6 @@
+// INSTRUCTIONS: Suppose I want to define a function that removes the last element of an array each time I call it, but does not mutate the original array. Fix the code so that the results are no longer mutating the array.
+
+function minusOne(arr) {
+	const tempArr = arr.slice(0, -1);
+  return tempArr;
+}

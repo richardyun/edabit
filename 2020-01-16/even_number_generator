@@ -1,0 +1,13 @@
+// INSTRUCTIONS: Create a function that finds all even numbers from 1 to the given number.
+
+function findEvenNums(num) {
+	const array = [];
+	if (num < 2) {
+		return array;
+	} else {
+		for (let i=2; i<=num; i+2) {
+    array.push(i);
+  	}
+	}
+  return array;
+}
