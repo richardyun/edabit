@@ -1,0 +1,5 @@
+// INSTRUCTIONS: Create a function which filters out strings from an array and returns a new array containing only integers.
+
+function filterList(l) {
+	return l.filter(x => typeof(x) !== "string");
+}
