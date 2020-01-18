@@ -1,0 +1,6 @@
+// INSTRUCTIONS: Create a function replaces all the vowels in a string with a specified character.
+
+function replaceVowels(str, ch) {
+	const regex = /[aeiou]/g;
+  return str.replace(regex, ch);
+}
