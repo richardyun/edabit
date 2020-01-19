@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Create a function that converts two arrays of x- and y- coordinates into an array of (x,y) coordinates.
+
+function convertCartesian(x, y) {
+	let arrMain = x.map(el => [el]);
+  for (let i=0; i<arrMain.length; i++) {
+    arrMain[i].push(y[i]);
+  }
+  return arrMain;
+}
