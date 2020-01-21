@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Write a function that maps files to their extension names.
+
+function getExtension(arr) {
+	function extension(str) {
+    const fileParts = str.split(".");
+    return fileParts[1];
+  }
+  return arr.map(extension);
+}
