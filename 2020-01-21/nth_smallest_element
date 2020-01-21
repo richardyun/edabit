@@ -1,0 +1,10 @@
+// INSTRUCTIONS: Given an unsorted array, create a function that returns the nth smallest element (the smallest element is the first smallest, the second smallest element is the second smallest, etc).
+
+function nthSmallest(arr, n) {
+	arr.sort(function (a, b) {
+    return a > b ? 1 : b > a ? -1 : 0;
+  });
+  if (n > arr.length) {
+    return null;
+  } else return arr[n - 1];
+}
