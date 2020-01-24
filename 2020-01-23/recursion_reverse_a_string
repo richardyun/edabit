@@ -1,0 +1,5 @@
+// INSTRUCTIONS: Write a function that reverses a string. Make your function recursive.
+
+function reverse(str) {
+	return str.split('').reverse().join('');
+}
