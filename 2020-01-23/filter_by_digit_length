@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Create a function that filters out an array to include numbers who only have a certain number of digits.
+
+function filterDigitLength(arr, num) {
+	const stringArr = arr.map(x => x.toString());
+  const filterArr = stringArr.filter(x => x.length === num);
+  return filterArr.map(x => parseInt(x, 10));
+}
