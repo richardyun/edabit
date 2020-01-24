@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Create a function that takes a string and returns true or false, depending on whether the characters are in order or not.
+
+function isInOrder(str) {
+	const arr = str.split('');
+  const newStr = arr.sort().join('');
+  if (newStr === str) {
+    return true;
+  } else return false;
+}
