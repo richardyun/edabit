@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Write a function that returns true if the product of an array is divisible by the sum of that same array.
+
+function divisible(arr) {
+	const product = (x, y) => x * y;
+  const sum = (x, y) => x + y;
+  if (arr.reduce(product) % arr.reduce(sum) === 0) {
+    return true;
+  } else return false;
+}
