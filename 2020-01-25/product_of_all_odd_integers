@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Create a function that returns the product of all odd integers in an array.
+
+function oddProduct(arr) {
+	const newArr = arr.filter(x => x % 2 !== 0);
+  const reducer = (x, y) => x * y;
+  return newArr.reduce(reducer);
+}
