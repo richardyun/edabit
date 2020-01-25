@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Write a function that removes any non-letters from a string, returning a well-known film title.
+
+function lettersOnly(str) {
+	const regex = /[a-zA-Z]/g;
+  const arr = str.match(regex);
+  return arr.join('');
+}
