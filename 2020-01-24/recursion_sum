@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Write a function that finds the sum of the first n natural numbers. Make your function recursive.
+
+function sum(n) {
+	if (n <= 0) {
+    return n;
+  } else return (n + sum(n - 1));
+}
