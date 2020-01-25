@@ -1,0 +1,7 @@
+// INSTRUCTIONS: You work in a toy car workshop, and your job is to build toy cars from a collection of parts. Each toy car needs 4 wheels, 1 car body, and 2 figures of people to be placed inside. Given the total number of wheels, car bodies and figures available, how many complete toy cars can you make?
+
+function cars(wheels, bodies, figures) {
+	const wheelSet = Math.floor(wheels / 4);
+  const figureSet = Math.floor(figures / 2);
+  return Math.min(wheelSet, bodies, figureSet);
+}
