@@ -1,0 +1,19 @@
+// INSTRUCTIONS: A game of table tennis almost always sounds like Ping! followed by Pong! Therefore, you know that Player 2 has won if you hear Pong! as the last sound (since Player 1 didn't return the ball back).
+
+// Given an array of Ping!, create a function that inserts Pong! in between each element. Also:
+
+// -If win equals True, end the list with Pong!.
+// -If win equals False, end with Ping! instead.
+
+function pingPong(arr, win) {
+	const pong = "Pong!";
+  const newArr = [];
+  for (i = 0; i < arr.length; i++) {
+    newArr.push(arr[i]);
+    newArr.push(pong);
+  }
+  if (!win) {
+    newArr.pop();
+  }
+  return newArr;
+}
