@@ -1,0 +1,18 @@
+// INSTRUCTIONS: In this exercise you will have to:
+
+// -Take a list of names.
+// -Add "Hello" to every name.
+// -Make one big string with all greetings.
+
+// The solution should be one string with a comma in between every "Hello (Name)".
+
+function greetPeople(names) {
+	const greeting = "Hello ";
+  let newStr = "";
+  for (i = 0; i < names.length; i++) {
+    if (i === names.length - 1) {
+      newStr = newStr + greeting + names[i];
+    } else newStr = newStr + greeting + names[i] + ", ";
+  }
+  return newStr;
+}
