@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Given an array, transform that array into a mirror.
+
+function mirror(arr) {
+	for (let i = arr.length - 2; i >= 0; i--) {
+    arr.push(arr[i]);
+  }
+  return arr;
+}

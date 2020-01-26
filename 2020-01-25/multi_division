@@ -1,0 +1,14 @@
+// INSTRUCTIONS: Create a function, that will for a given a, b, c, do the following:
+
+// -Add a to itself b times.
+// -Check if the result is divisible by c.
+
+function abcmath(a, b, c) {
+  let sum = a;
+	for (let i = 1; i <= b; i++) {
+    sum = sum + sum;
+  }
+  if (sum % c === 0) {
+    return true;
+  } else return false;
+}

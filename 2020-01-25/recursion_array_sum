@@ -1,0 +1,12 @@
+// INSTRUCTIONS: Write a function that finds the sum of an array. Make your function recursive.
+
+function sum(arr) {
+  let length = arr.length;
+  const lastEl = arr[length - 1];
+  if (length === 0) {
+    return 0;
+  } else {
+    arr.pop();;
+    return lastEl + sum(arr);
+  }
+}
