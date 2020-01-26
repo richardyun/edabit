@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Create a function that takes a sentence and turns every "i" into "wi" and "e" into "we", and add "owo" at the end.
+
+function owofied(sentence) {
+	const ending = " owo";
+  const regex_i = /i/g;
+  const regex_e = /e/g;
+  return sentence.replace(regex_i, "wi").replace(regex_e, "we") + ending;
+}
