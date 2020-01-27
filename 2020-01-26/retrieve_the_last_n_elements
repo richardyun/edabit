@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Write a function that retrieves the last n elements from an array.
+
+function last(a, n) {
+	if (n > a.length) {
+		return "invalid";
+	} else if (n === 0) {
+		return [];
+	} else	return a.slice(a.length - n);
+}
