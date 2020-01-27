@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Create a function that repeats each character in a string n times.
+
+function repeat(str, n) {
+	const arr = str.split('');
+  const newArr = arr.map(x => x.repeat(n));
+  return newArr.join('');
+}
