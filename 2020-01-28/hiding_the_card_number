@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Write a function that takes a credit card number and only displays the last four characters. The rest of the card number must be replaced by ************.
+
+function cardHide(card) {
+  const hidden = "*";
+  let newStr = "";
+	const lastFour = card.slice(-4);
+  newStr = hidden.repeat(card.length - 4) + lastFour;
+  return newStr;
+}
