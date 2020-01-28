@@ -1,0 +1,23 @@
+// INSTRUCTIONS: John is playing a dice game. The rules are as follows.
+
+// 1. Roll two dice.
+// 2. Add the numbers on the dice together.
+// 3. Add the total to your overall score.
+// 4. Repeat this for three rounds.
+
+// **But if you roll DOUBLES, your score is instantly wiped to 0 and your game ends immediately!**
+
+// Create a function which takes in a matrix as input, and return John's score after his game has ended.
+
+function diceGame(arr) {
+	let score = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i][0] === arr[i][1]) {
+      return 0;
+    } else {
+      const reducer = (x, y) => x + y;
+      score = score + arr[i].reduce(reducer);
+    }
+  }
+  return score;
+}
