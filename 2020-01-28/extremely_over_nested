@@ -1,0 +1,6 @@
+// INSTRUCTIONS: Create a function which returns the original value from a matrix with too many sub arrays.
+
+function deNest(arr) {
+	const newArr = arr.flat(Infinity);
+  return newArr[0];
+}

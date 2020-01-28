@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Create a function that returns the minimum number of removals to make the sum of all elements in an array even.
+
+function minimumRemovals(arr) {
+	const reducer = (x, y) => x + y;
+  const sum = arr.reduce(reducer);
+  if (sum % 2 === 0) {
+    return 0;
+  } else return 1;
+}
