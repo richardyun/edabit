@@ -1,0 +1,7 @@
+// INSTRUCTIONS: You are given one input: An array containing eight 1's and/or 0's. Write a function that takes an 8 bit binary number and convert it to decimal.
+
+function binaryToDecimal(binary) {
+	const newBinary = parseInt(binary.join(''), 10);
+  const baseTen = parseInt(newBinary, 2).toString(10);
+  return parseInt(baseTen, 10);
+}
