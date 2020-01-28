@@ -1,0 +1,11 @@
+// INSTRUCTIONS: Write a function that returns true if a number is a palindrome.
+
+function isPalindrome(n) {
+	const stringNum = n + '';
+  const arr = stringNum.split('');
+  const reverse = arr.reverse().join('');
+  const reverseNum = parseInt(reverse, 10);
+  if (n === reverseNum) {
+    return true;
+  } else return false;
+}
