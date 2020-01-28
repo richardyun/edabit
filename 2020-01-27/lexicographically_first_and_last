@@ -1,0 +1,11 @@
+// INSTRUCTIONS: Write a function that returns the lexicographically first and lexicographically last rearrangements of a string. Output the results in the following manner:
+
+// firstAndLast(string) ➞ [first, last]
+
+function firstAndLast(s) {
+	const arr = s.split('').sort();
+  const newArr = [];
+  newArr.push(arr.join(''));
+  newArr.push(arr.reverse().join(''));
+  return newArr;
+}
