@@ -1,0 +1,8 @@
+// INSTRUCTIONS: The mean of a group of numbers is calculated by summing all numbers, and dividing this sum by the total count of numbers in the group. Given a sorted array of numbers, return the mean (rounded to one decimal place).
+
+function mean(nums) {
+	const reducer = (x, y) => x + y;
+  const sum = nums.reduce(reducer);
+  const avg = (sum / nums.length).toFixed(1);
+  return parseFloat(avg);
+}
