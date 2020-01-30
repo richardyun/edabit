@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Throughout the 12 days of Christmas, my true love gave me in total 364 items.
+
+// Create a function where given n days as an argument, return the total amount of items received throughout those days as an integer.
+
+function xmasItems(n) {
+	return (n * (n + 1) * (n + 2)) / 6;
+}
