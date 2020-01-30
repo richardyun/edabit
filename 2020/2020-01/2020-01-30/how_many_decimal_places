@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Create a function that returns the number of decimal places a number (given as a string) has. Any zeros after the decimal point count towards the number of decimal places.
+
+function getDecimalPlaces(num) {
+	const decimalIndex = num.indexOf(".");
+  const stringMaxIndex = num.length - 1;
+  if (decimalIndex < 0) return 0;
+  return stringMaxIndex - decimalIndex;
+}
