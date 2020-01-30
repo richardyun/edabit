@@ -1,0 +1,13 @@
+// INSTRUCTIONS: In music, notes can be written out in multiple ways (especially for notes on the black keys). Although these notes are spelled out differently, they still are the same note physically.
+
+//Given a musical note, create a function that returns its enharmonic equivalent. The examples below should make this clear.
+
+function getEquivalent(note) {
+	const stringFull = "GABCDEFGA";
+  const stringTrim = " ABCDEFG ";
+  const noteIndex = stringTrim.indexOf(note[0]);
+  const adjustment = {"#": 1, "b": -1}[note[1]];
+  const newIndex = noteIndex + adjustment;
+  const newSymbol = {"#": "b", "b": "#"}[note[1]];
+  return stringFull[newIndex] + newSymbol;
+}
