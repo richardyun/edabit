@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Given an object of people and their ages, return how old the people would be after n years have passed. Use the absolute value of n.
+
+function afterNYears(names, n) {
+	for (let key in names) {
+    names[key] += Math.abs(n);
+  }
+  return names;
+}
