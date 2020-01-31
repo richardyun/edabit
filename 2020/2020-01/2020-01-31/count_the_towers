@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Create a function that counts the number of towers.
+
+function countTowers(towers) {
+	const towerBase = towers.pop();
+  const splitTowers = towerBase[0].split(" ");
+  const towersOnly = splitTowers.filter(x => x.length > 0);
+  return towersOnly.length;
+}
