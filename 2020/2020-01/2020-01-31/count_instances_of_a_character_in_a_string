@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.
+
+function charCount(myChar, str) {
+	const arr = str.split('');
+  const newArr = arr.filter(x => x === myChar);
+  return newArr.length;
+}
