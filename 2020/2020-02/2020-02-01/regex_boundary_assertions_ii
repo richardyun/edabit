@@ -1,0 +1,8 @@
+// INSTRUCTIONS: You are give a list with random words but your program doesn't accept words that begin with the capitla letter C. Remove the unaccepted words and return the new list.
+
+// -Use a regexp boundary assertion in your function.
+
+function acceptedWords(list) {
+  const regex = /^(?!C)\w+/g;
+  return arr = list.filter(x => x.match(regex));
+}
