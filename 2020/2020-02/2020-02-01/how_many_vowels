@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Create a function that takes a string and returns the number (count) of vowels contained within it.
+
+function countVowels(str) {
+	const arr = str.split('');
+  const regex = /[aeiouAEIOU]/g;
+  const newArr = arr.filter(x => x.match(regex));
+  return newArr.length;
+}

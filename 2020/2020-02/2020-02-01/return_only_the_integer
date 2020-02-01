@@ -1,0 +1,10 @@
+// INSTRUCTIONS: Write a function that takes an array of elements and returns only the integers.
+
+function returnOnlyInteger(arr) {
+	function check(x) {
+    if (typeof(x) === "number" && x % 1 === 0) {
+      return x;
+    }
+  }
+  return arr.filter(check);
+}
