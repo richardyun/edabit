@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Assume a program only reads .js or .jsx files. Write a function that accepts a file path and returns true if it can read the file and false if it can't.
+
+function isJS(path) {
+	const regex = /\w+$/;
+  const extension = path.match(regex);
+  if (extension[0] === "js" || extension[0] === "jsx") return true;
+  else return false;
+}
