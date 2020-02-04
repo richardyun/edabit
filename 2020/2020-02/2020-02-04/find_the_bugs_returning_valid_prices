@@ -1,0 +1,8 @@
+// INSTRUCTIONS: There has been a masterdata issue which affected the prices of the products. All prices need to be checked if they are a valid number and zero or higher (>= 0). Products with a price of 0 are free and is a valid price.
+
+// The return value should be a Boolean.
+
+function hasValidPrice(product) {
+	if (product && typeof(product.price) === "number" && product.price >= 0) return true;
+  else return false;
+}
