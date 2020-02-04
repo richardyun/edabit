@@ -1,0 +1,9 @@
+// INSTRUCTIONS: Write a function that transforms all letters from [a, m] to 0 and letters from [n, z] to 1 in a string.
+
+function convertBinary(str) {
+	const regex1 = /[a-m]/gi;
+  const regex2 = /[n-z]/gi;
+  const str1 = str.replace(regex1, 0);
+  const str2 = str1.replace(regex2, 1);
+  return str2;
+}
