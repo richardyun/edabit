@@ -1,0 +1,19 @@
+// INSTRUCTIONS: Object destructuring and new variable names
+
+// const obj =  { one : 1, two : 2 }
+
+// var { one, two } = obj
+
+// We can assign variables by same name properties of objects, but what if I wanted to assign obj.one to a different name like anotherOne?
+
+// Challenge
+
+// -Use es6 object destructuring to assign obj.one to the variable anotherOne.
+// -Variable two needs to remain assigned to obj.two
+// -Ignore the .toString() function (used for validation)
+
+// Notes
+
+// If you know how to use object destructuring then go ahead and complete the challenge, otherwise check out the Resource links, look at some examples and then comeback and try out the challenge.
+
+let str = `({ one : anotherOne, two } = { one : 1, two : 2}).toString()`;
