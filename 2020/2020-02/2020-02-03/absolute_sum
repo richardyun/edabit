@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Take an array of integers (positive or negative or both) and return the sum of the absolute value of each element.
+
+function getAbsSum(arr) {
+	const newArr = arr.map(x => Math.abs(x));
+  const reducer = (x, y) => x + y;
+  return newArr.reduce(reducer);
+}
