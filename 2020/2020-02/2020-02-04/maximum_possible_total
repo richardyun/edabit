@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Given an array of 10 numbers, return the maximum possible total made by summing just 5 of the 10 numbers.
+
+function maxTotal(nums) {
+	const arr = nums.sort((a, b) => a - b).slice(-5);
+  const reducer = (x, y) => x + y;
+  return arr.reduce(reducer);
+}
