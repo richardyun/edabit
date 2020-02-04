@@ -1,0 +1,14 @@
+// INSTRUCTIONS: Create a function that takes a string and censors words over four characters with *.
+
+function censor(str) {
+	const arr = str.split(" ");
+  let newArr = [];
+  function lengthCheckAndReplace(x) {
+    const star = "*";
+    if (x.length > 4) {
+      return x.replace(x, star.repeat(x.length));
+    } else return x;
+  }
+  newArr = arr.map(lengthCheckAndReplace);
+  return newArr.join(" ");
+}
