@@ -1,0 +1,16 @@
+// INSTRUCTIONS: Object destructuring and default values
+
+// const obj =  { two : 2 }
+
+// var { one, two } = obj
+
+// console.log(one) // outputs undefined
+
+// Sometimes an object will be missing properties we are expecting. We can avoid undefined errors by using default values.
+
+// Challenge
+
+// -Use es6 object destructuring to add a default value of 1 to the one variable.
+// -Ignore the .toString() function (used for validation)
+
+const str = `({ one: one = 1, two } = { two : 2 }).toString()`
