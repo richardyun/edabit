@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Create a function that takes an array of 10 numbers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).
+
+function formatPhoneNumber(numbers) {
+	const areaCode = numbers.slice(0, 3).join('');
+  const firstThree = numbers.slice(3, 6).join('');
+  const lastFour = numbers.slice(6).join('');
+  return `(${areaCode}) ${firstThree}-${lastFour}`;
+}
