@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Create a function that takes a string and returns a new string with all vowels removed.
+
+function removeVowels(str) {
+	const regex = /[aeiou]/gi;
+  const newStr = str.replace(regex, "");
+  return newStr;
+}
