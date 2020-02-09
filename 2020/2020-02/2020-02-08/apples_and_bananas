@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Write a function, .vreplace() that extends the String prototype by replacing all vowels in a string with a specified vowel.
+
+String.prototype.vreplace = function(vowel, str) {
+	if (!str) {str = this;}
+  const regex = /[aeiou]/gi;
+  const newStr = str.replace(regex, vowel);
+  return newStr;
+}
