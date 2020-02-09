@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Create a function that takes a word and returns true if the word has two consecutive identical letters.
+
+function doubleLetters(word) {
+	const regex = /([a-z])\1/g;
+  if (word.match(regex)) {
+    return true;
+  } else return false;
+}
