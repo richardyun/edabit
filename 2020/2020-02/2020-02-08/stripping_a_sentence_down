@@ -1,0 +1,20 @@
+// INSTRUCTIONS: Create a function which takes in a sentence str and a string of characters chars and return the sentence but with all the specified characters removed.
+
+function stripSentence(str, chars) {
+	const arr = str.split('');
+  const check = chars.split('');
+  const newArr = arr.filter(function(x) {
+    let match = false;
+    for (let i = 0; i < check.length; i++) {
+      if (x.includes(check[i])) {
+        match = true;
+        return "";
+      } else {
+        match = false;
+        continue;
+      };
+    }
+    if(!match) return x;
+  });
+  return newArr.join('');
+}
