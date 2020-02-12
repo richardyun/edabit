@@ -1,0 +1,8 @@
+// INSTRUCTIONS: Create a function that takes in year and months as input, then return what year it would be after n-months has elapsed.
+
+function afterNMonths(year, months) {
+	if (!year) return "year missing";
+  if (!months) return "month missing";
+  const yearsToAdd = Math.floor(months / 12);
+  return year + yearsToAdd;
+}
