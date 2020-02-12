@@ -1,0 +1,6 @@
+// INSTRUCTIONS: Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
+
+function findLargestNums(arr) {
+	const newArr = arr.map(x => Math.max(...x));
+  return newArr;
+}
