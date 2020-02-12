@@ -1,0 +1,11 @@
+// INSTRUCTIONS: You are given the length of a video in minutes. The format is mm:ss (e.g.: "02:54"). Create a function that takes the video length and return it in seconds.
+
+function minutesToSeconds(time) {
+	const arr = time.split(":");
+  const sec = parseInt(arr[1], 10);
+  if (sec >= 60) {
+    return false;
+  }
+  const minToSec = parseInt(arr[0]) * 60;
+  return minToSec + sec;
+}

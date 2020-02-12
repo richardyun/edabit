@@ -1,0 +1,17 @@
+// INSTRUCTIONS: In this challenge, you must generate a sequence of consecutive numbers, from a lower bound that will always be equal to 1, up to a variable given higher bound (including the bounds in the sequence).
+
+// Each number of the sequence that can be exactly divided by 4 must be amplified by 10 (see notes below).
+
+// Given a higher bound num, implement a function that returns an array with the sequence of numbers, after that every multiple of 4 has been amplified.
+
+function amplify(num) {
+	const arr = [];
+  for (let i = 1; i <= num; i++) {
+    if (i % 4 === 0) {
+      arr.push(i * 10);
+    } else {
+      arr.push(i)
+    }
+  }
+  return arr;
+}
