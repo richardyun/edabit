@@ -1,0 +1,7 @@
+// INSTRUCTIONS: Create a function that takes in a year and returns the correct century.
+
+function century(year) {
+	let centuryNum = year % 100 === 0 ? (year / 100) : Math.floor(year / 100) + 1;
+  let postNum = centuryNum === 21 ? "st" : "th";
+  return centuryNum + postNum + " century";
+}
