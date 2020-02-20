@@ -1,0 +1,11 @@
+// INSTRUCTIONS: Create a function that returns the number of hashes and pluses in a string.
+
+function hashPlusCount(str) {
+  const regxHash = /#/g;
+  const regxPlus = /\+/g;
+  const hashArr = str.match(regxHash);
+  const plusArr = str.match(regxPlus);
+  let hashes = hashArr ? hashArr.length : 0;
+  let pluses = plusArr ? plusArr.length : 0;
+  return [hashes, pluses];
+}
