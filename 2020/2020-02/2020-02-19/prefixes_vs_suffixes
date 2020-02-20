@@ -1,0 +1,16 @@
+// INSTRUCTIONS: Create two functions: isPrefix(word, prefix-) and isSuffix(word, -suffix).
+
+// 1. isPrefix should return true if it begins with the prefix argument.
+// 2. isSuffix should return true if it ends with the suffix argument.
+
+// Otherwise return false.
+
+function isPrefix(word, prefix) {
+	const cutPrefix = prefix.slice(0, -1);
+  return word.startsWith(cutPrefix);
+}
+
+function isSuffix(word, suffix) {
+	const cutSuffix = suffix.slice(1);
+  return word.endsWith(cutSuffix);
+}
