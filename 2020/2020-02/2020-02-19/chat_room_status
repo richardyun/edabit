@@ -1,0 +1,23 @@
+// INSTRUCTIONS: Write a function that returns the number of users in a chatroom based on the following rules:
+
+// 1. If there is no one, return "no one online".
+// 2. If there 1 person, return "[user1] online".
+// 3. If there are 2 people, return [user 1] and [user 2] online".
+// 4. If there are n>2 people, return the first two names and add "and n-2 more online".
+
+// For example, if there are 5 users, return:
+
+// "[user1], [user2] and 3 more online"
+
+function chatroomStatus(users) {
+  const firstUser = users[0];
+  const secondUser = users[1];
+  const extraUsers = users.length - 2
+	if (users.length >= 3) {
+    return `${firstUser}, ${secondUser} and ${extraUsers} more online`;
+  } else if (users.length === 2) {
+    return `${firstUser} and ${secondUser} online`;
+  } else if (users.length === 1) {
+    return `${firstUser} online`;
+  } else return "no one online";
+}
