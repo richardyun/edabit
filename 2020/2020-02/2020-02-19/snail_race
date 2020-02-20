@@ -1,0 +1,18 @@
+// INSTRUCTIONS: Steve and Maurice have racing snails. They each have 3, a slow (s), medium (m) and fast (f) one. Although Steve's snails are all a bit stronger than Maurice's, Maurice has a trick up his sleeve. His plan is:
+
+// 1. Round 1: [s, f] Sacrifice his slowest snail against Steve's fastest.
+// 2. Round 2: [m, s] Use his middle snail against Steve's slowest.
+// 3. Round 3: [f, m] Use his fastest snail against Steve's middle.
+
+// Create a function that determines whether Maurice's plan will work by outputting true if Maurice wins 2/3 games.
+
+// The function inputs:
+
+// 1. Array 1: [s, m, f] for Maurice.
+// 2. Array 2: [s, m, f] for Steve.
+
+function mauriceWins(mSnails, sSnails) {
+	if (mSnails[1] > sSnails[0] && mSnails[2] > sSnails[1]) {
+    return true;
+  } else return false;
+}
